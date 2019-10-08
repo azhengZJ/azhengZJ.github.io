@@ -1,8 +1,8 @@
 ---
 title: Zuji-JPA — 不用写sql和逻辑代码的 Spring Data JPA 复杂查询扩展库
-date: 2019-10-09 14:10:00
+date: 2019-10-08 14:10:00
 author: azheng
-img: http://static.blinkfox.com/blog/2019/08/20jpa-20190820.png
+img: http://static.blinkfox.com/hexoblog_20180920_proxy.jpg
 cover: true
 categories: 后端
 tags:
