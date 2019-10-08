@@ -83,7 +83,7 @@ logo: /medias/logo.png
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
 # 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
 indexbtn:
-  enable: true
+  enable: false
   name: 下载主题
   icon: fa-cloud-download
   url: https://codeload.github.com/blinkfox/hexo-theme-matery/zip/v1.0.1
@@ -92,9 +92,9 @@ indexbtn:
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  qq: 1181062873
-  github: https://github.com/blinkfox/
-  email: chenjiayin1990@163.com
+  qq: 1009460334
+  github: https://github.com/azhengZJ/
+  email: 18055661285@163.com
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
 # You can add `toc: false` to the Front-matter of a post to turn off the TOC.
@@ -162,36 +162,36 @@ profile:
 myProjects:
   enable: true
   data:
-    hexo-theme-matery:
+    demo1:
       icon: fa-meetup
       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-      url: http://github.com/blinkfox/hexo-theme-matery
-      desc: 一个采用 Material Design 和响应式设计的 Hexo 博客主题。
-    zealt:
+      url: https://azhengzj.github.io/zuji-jpa/
+      desc: 这是一个demo1项目。
+    demo2:
       icon: fa-database
       iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-      url: https://github.com/blinkfox/zealot
-      desc: 一个轻量级的 SQL 和参数动态生成工具库
-    typora-vue-theme:
+      url: https://azhengzj.github.io/zuji-jpa/
+      desc: 这是一个demo2项目。
+    demo3:
       icon: fa-file-text-o
       iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-      url: https://github.com/blinkfox/typora-vue-theme
-      desc: 这是 Typora Markdown 编辑器的类似 Vue 文档风格的主题。
-    adept:
+      url: https://azhengzj.github.io/zuji-jpa/
+      desc: 这是一个demo3项目。
+    demo4:
       icon: fa-compress
       iconBackground: 'linear-gradient(135deg, #ffeb3b 0%, #ff9900 100%)'
-      url: https://github.com/blinkfox/adept
-      desc: 这是一个用于简化 JDBC 操作的轻量级 DAO 工具库。
-    stalker:
+      url: https://azhengzj.github.io/zuji-jpa/
+      desc: 这是一个demo4项目。
+    demo5:
       icon: fa-snowflake-o
       iconBackground: 'linear-gradient(135deg, #e079fc 0%, #7c44ff 100%)'
-      url: https://github.com/blinkfox/stalker
-      desc: 这是一个简单的用来对 Java 代码做性能评估的工具库。
-    mini-table:
+      url: https://azhengzj.github.io/zuji-jpa/
+      desc: 这是一个demo5项目。
+    demo6:
       icon: fa-table
       iconBackground: 'linear-gradient(135deg, #309286 0%, #32dbc6 100%)'
-      url: https://github.com/blinkfox/mini-table
-      desc: 这是一个轻量级、零依赖、可定制化修改的 Java ASCII 表格生成库。
+      url: https://azhengzj.github.io/zuji-jpa/
+      desc: 这是一个demo6项目。
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
@@ -236,13 +236,13 @@ postCalendar: true
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
   enable: true
-  owner: blinkfox
-  repo: blinkfox.github.io
+  owner: azhengZJ
+  repo: azhengZJ.github.io
   oauth:
-    clientId: 2e56c9f3a90b6e8fb4f0
-    clientSecret: ba491ea79bbff85ec80b88db79e210b474a9cbc8
+    clientId: d4d1d3ec1e0efc877d7c
+    clientSecret: 21cd95acc3f3b86784b94e73fc7116ce1bff0780
   admin:
-    - blinkfox
+    - azhengZJ
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
@@ -258,7 +258,7 @@ gitment:
 # Disqus评论模块的配置，默认为不激活
 disqus:
   enable: false
-  shortname: blinkfox
+  shortname: azhengZJ
 
 # Livere comment configuration, the default is not activated
 # Livere 来必力评论模块的配置，默认为不激活
@@ -284,7 +284,7 @@ valine:
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
   enable: true
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/azhengZJ/zuji-jpa
   title: Fork Me
 
 # The password verification feature of read post. To use this feature,
