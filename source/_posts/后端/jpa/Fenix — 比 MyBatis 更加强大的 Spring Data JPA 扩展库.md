@@ -3,7 +3,7 @@ title: Fenix — 比 MyBatis 更加强大的 Spring Data JPA 扩展库
 date: 2019-08-20 00:10:00
 author: blinkfox
 img: http://static.blinkfox.com/blog/2019/08/20jpa-20190820.png
-cover: true
+cover: false
 categories: 后端
 tags:
   - Java
