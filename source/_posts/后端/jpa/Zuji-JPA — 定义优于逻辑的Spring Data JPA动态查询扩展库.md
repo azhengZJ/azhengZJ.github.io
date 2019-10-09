@@ -31,7 +31,7 @@ QQ交流群:`758629787`
 类似于mybatis-plus的条件构造器
 动态条件查询 + or 嵌套条件+ 排序+ 分页
 
-Zuji-JPA查询都是基于Specification进行封装开发，所以使用之前必须要继承JpaSpecificationExecutor接口
+Zuji-JPA查询全部基于Specification进行开发，所以使用之前必须要继承JpaSpecificationExecutor接口
 ```java
 public interface UserRepository extends JpaSpecificationExecutor<User> {
 
