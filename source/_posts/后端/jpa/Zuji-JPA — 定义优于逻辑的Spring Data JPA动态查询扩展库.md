@@ -28,9 +28,6 @@ QQ交流群:`758629787`
 
 ## 示例  
 
-类似于mybatis-plus的条件构造器
-动态条件查询 + or 嵌套条件+ 排序+ 分页
-
 Zuji-JPA查询全部基于Specification进行开发，所以使用之前必须要继承JpaSpecificationExecutor接口
 ```java
 public interface UserRepository extends JpaSpecificationExecutor<User> {
@@ -39,6 +36,9 @@ public interface UserRepository extends JpaSpecificationExecutor<User> {
 ```
 
 ### 多层嵌套复杂条件查询
+
+此查询类似于mybatis-plus的条件构造器。
+以下示例包含：动态条件查询 + or 嵌套条件+ 排序+ 分页
 
 ```java
 public Page<User> list(ReqUserListDTO params) {
