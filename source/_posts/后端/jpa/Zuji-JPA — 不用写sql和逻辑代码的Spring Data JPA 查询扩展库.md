@@ -19,6 +19,8 @@ tags:
 
 多层级嵌套复杂的动态条件查询使用超简洁的链式编程和语义化编程即可轻松实现。
 
+使用zuji-jpa可以大大简化开发，节省更多的时间让你专注于业务。
+
 - [使用文档: https://azhengZJ.github.io/zuji-jpa](https://azhengZJ.github.io/zuji-jpa)
 
 ## 示例  
