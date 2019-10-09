@@ -31,19 +31,26 @@ QQ交流群:`758629787`
 类似于mybatis-plus的条件构造器
 动态条件查询 + or 嵌套条件+ 排序+ 分页
 
+Zuji-JPA查询都是基于Specification进行封装开发，所以使用之前必须要继承JpaSpecificationExecutor接口
+```java
+public interface UserRepository extends JpaSpecificationExecutor<User> {
+
+}
+```
+
 ### 多层嵌套复杂条件查询
 
 ```java
-public Page<Users> list(ReqUserListDTO params) {
-   Specification<Users> spec = SpecificationUtils.where(e -> {
-       if (!params.getUserType().name().equals(UserTypeEnum.ALL.name())) {
-           e.eq("userType", params.getUserType().name());
+public Page<User> list(ReqUserListDTO params) {
+   Specification<User> spec = SpecificationUtils.where(e -> {
+       if (!params.getUserType().equals(UserType.ALL)) {
+           e.eq("userType", params.getUserType());
        }
        if (params.getPriority() > 0) {
            e.eq("priority", params.getPriority());
        }
        if (params.getRange() != null) {
-           e.eq("assigneeId", authService.currentManagerId());
+           e.eq("assigneeId", AuthHelper.currentUserId());
        }
        e.or(e2 -> {
            e2.eq("status", "1");
@@ -58,16 +65,16 @@ public Page<Users> list(ReqUserListDTO params) {
 如果没有条件判断也可以写成这样，链式编程
 
 ```java
-public Page<Users> list(ReqUserListDTO params) {
-   Specification<Users> spec = SpecificationUtils.where(e -> {
-       if (!params.getUserType().name().equals(UserTypeEnum.ALL.name())) {
-           e.eq("userType", params.getUserType().name());
+public Page<User> list(ReqUserListDTO params) {
+   Specification<User> spec = SpecificationUtils.where(e -> {
+       if (!params.getUserType().equals(UserType.ALL)) {
+           e.eq("userType", params.getUserType());
        }
        if (params.getPriority() > 0) {
            e.eq("priority", params.getPriority());
        }
        if (params.getRange() != null) {
-           e.eq("assigneeId", authService.currentManagerId());
+           e.eq("assigneeId", AuthHelper.currentUserId());
        }
        e.or(e2 -> e2.eq("status", "1").eq("status", "2")).eq("deleted", 0);
    });
@@ -82,9 +89,9 @@ public Page<Users> list(ReqUserListDTO params) {
 SELECT
 	* 
 FROM
-	users
+	user
 WHERE
-	userType = 'admin' 
+	userType = 'ADMIN' 
 	AND priority = 1 
 	AND assigneeId = 11 
 	AND ( STATUS = 1 OR STATUS = 2 ) 
@@ -101,7 +108,6 @@ ORDER BY
 
 基于spring data jap Specification 查询封装，封装精简 灵活 ，扩展性非常强。
 需要源码的  请加qq交流群（758629787） 免费获取源码。
-
 
 
 ## 开源许可证
