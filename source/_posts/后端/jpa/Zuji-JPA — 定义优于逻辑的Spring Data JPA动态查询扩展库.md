@@ -1,5 +1,5 @@
 ---
-title: Zuji-JPA — 不用写sql和逻辑代码的 Spring Data JPA 复杂查询扩展库
+title: Zuji-JPA — 定义优于逻辑的Spring Data JPA动态查询扩展库
 date: 2019-10-08 14:10:00
 author: azheng
 img: http://static.blinkfox.com/hexoblog_20180920_proxy.jpg
@@ -15,7 +15,7 @@ tags:
 
 全部基于静态工具类方法实现，程序启动无需加载任何bean.
 
-以后再也不用写sql，单层级的动态条件查询不用写具体实现的java代码即可信手拈来。
+以后再也不用写sql，单层级的动态条件查询只需定义入参实体类，不用写具体java实现代码即可信手拈来。
 
 多层级嵌套复杂的动态条件查询使用超简洁的链式编程和语义化编程即可轻松实现。
 
