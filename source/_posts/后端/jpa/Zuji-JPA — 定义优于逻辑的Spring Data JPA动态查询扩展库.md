@@ -67,16 +67,11 @@ public Page<User> list(ReqUserListDTO params) {
 ```java
 public Page<User> list(ReqUserListDTO params) {
    Specification<User> spec = SpecificationUtils.where(e -> {
-       if (!params.getUserType().equals(UserType.ALL)) {
-           e.eq("userType", params.getUserType());
-       }
-       if (params.getPriority() > 0) {
-           e.eq("priority", params.getPriority());
-       }
-       if (params.getRange() != null) {
-           e.eq("assigneeId", AuthHelper.currentUserId());
-       }
-       e.or(e2 -> e2.eq("status", "1").eq("status", "2")).eq("deleted", 0);
+       e.eq("userType", params.getUserType())
+        .eq("priority", params.getPriority())
+        .eq("assigneeId", AuthHelper.currentUserId())
+        .or(e2 -> e2.eq("status", "1").eq("status", "2"))
+        .eq("deleted", 0);
    });
    Sort sort = Sort.by("createTime").descending();
    return repository.findAll(spec, params.pageRequest(sort));
@@ -103,7 +98,7 @@ ORDER BY
 
 ### 单层多条件查询
 
-未完待续。。。
+未完待续。。。敬请期待
 
 
 基于spring data jap Specification 查询封装，封装精简 灵活 ，扩展性非常强。
