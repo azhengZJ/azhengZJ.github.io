@@ -4,12 +4,10 @@ date: 2019-10-11 14:10:00
 author: azheng
 img: https://raw.githubusercontent.com/azhengZJ/azhengZJ.github.io/hexo/themes/hexo-theme-matery/source/medias/banner/1.jpg
 cover: true
-top: true
 categories: 后端
 tags:
   - Java
-  - JPA
-  - Zuji
+
 ---
 
 本书一共七十八小节，每个小节讲述了一条规则。 这些规则实践通常会使那些最优秀和最富有经验的程序员从中受益。 所有的内容分为11章，每章都涉及软件设计的一个广泛方面。 本书不需要按顺序阅读：每个小节都或多或少地独立存在。 这些小节有很多交叉引用，因此您可以通过本书轻松学习自己的课程。
