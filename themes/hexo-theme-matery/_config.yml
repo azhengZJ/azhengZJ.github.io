@@ -59,7 +59,7 @@ video:
   enable: true
   showTitle: true
   title: 精彩视频
-  url: https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4 # 必填
+  url: https://api.youku.com/videos/player/file?data=WcEl5oEuTdTVNVGcxTWpBeE5nPT18MHwwfDEwMDUwfDAO0O0O # 必填
   pic:
   thumbnails:
   height: # 如：400
