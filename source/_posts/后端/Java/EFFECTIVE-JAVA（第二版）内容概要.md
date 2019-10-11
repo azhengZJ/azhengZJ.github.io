@@ -1,6 +1,6 @@
 ---
 title: EFFECTIVE-JAVA（第二版）内容概要
-date: 2019-10-08 14:10:00
+date: 2019-10-11 14:10:00
 author: azheng
 img: https://raw.githubusercontent.com/azhengZJ/azhengZJ.github.io/hexo/themes/hexo-theme-matery/source/medias/banner/1.jpg
 cover: true
