@@ -2,7 +2,7 @@
 title: Zuji-JPA — 定义优于逻辑的Spring Data JPA动态查询扩展库
 date: 2019-10-08 14:10:00
 author: azheng
-img: http://static.blinkfox.com/hexoblog_20180920_proxy.jpg
+img: https://raw.githubusercontent.com/azhengZJ/azhengZJ.github.io/hexo/themes/hexo-theme-matery/source/medias/banner/1.jpg
 cover: true
 top: true
 categories: 后端
