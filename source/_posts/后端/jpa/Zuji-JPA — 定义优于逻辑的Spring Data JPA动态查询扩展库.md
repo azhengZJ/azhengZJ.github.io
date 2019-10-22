@@ -12,7 +12,7 @@ tags:
   - Zuji
 ---
 
-- [使用文档: http://zuji-jpa.spring-data-jpa.top](http://zuji-jpa.spring-data-jpa.top)
+- [使用文档: https://azhengzj.github.io/zuji-jpa/](https://azhengzj.github.io/zuji-jpa/)
 
 QQ交流群:`758629787`
 
