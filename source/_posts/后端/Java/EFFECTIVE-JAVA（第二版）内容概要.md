@@ -203,10 +203,13 @@ toString通用约定指出，被返回的字符串应该是一个“简洁的，
 
 ### 第14条 在公有类中使用访问方法而非公有域
 反面示例
+```java
 public class Point {  
     public double x;  
     public double y;  
 }
+```
+
 总之，公有类永远都不应该暴露可变的域
 
 ### 第15条 使可变性最小化
@@ -250,7 +253,7 @@ public class Point {
 ### 第22条 优先考虑静态成员类（内部类尽量使用static修饰）
 非静态成员类的每个实例都隐含着与外围类的一个外围实例
 
-## 五章 泛型
+## 第五章 泛型
 ### 第23条 请不要在新代码中使用原生态类型
 指定泛型时尽量缩小泛型的范围
 ### 第24条 消除非受检警告
@@ -271,21 +274,25 @@ public class Point {
 泛型方法就像泛型一样，使用起来比要求客户端转换输入参数并返回值的方法来的更加安全，也更加容易
 
 ### 第28条 利用有限制通配符来提升API的灵活性
+
+```java
 public class Stack<E> {
        public void pushAll(Iterable<E> src) {
               for (E e : src)
                      push(e);
        }
 }
+```
 如果类的E为Number，方法里的E传的又是Integer，此时会报错，原因在于Iterable<Integer>并不是Iterable<Number>的子类型，泛型是不协变的
 解决方法：使用通配符 Iterable<? extends E>即可解决这个问题
+```java
 public class Stack<E> {
        public void pushAll(Iterable<? extends E> src) {
               for (E e : src)
                      push(e);
        }
 }
-
+```
 
 ### 第29条 优先考虑类型安全的异构容器
 一般情况下，泛型最通常应用于集合，如set和Map，以及单元素的容器。
@@ -293,6 +300,7 @@ public class Stack<E> {
 有时候我们可能需要更多的灵活性，比如数据库行可以有任意多的列，每个列的类型可能不一样，希望能以类型安全的方式访问所有列。
 
 下面就实现了这样的效果
+```java
 private Map<Class<?>,Object>  map = new HashMap<Class<?>, Object>();
 private Map<List<?>,Object>  map2 = new HashMap<List<?>, Object>();
  
@@ -315,6 +323,7 @@ public static void main(String[] args) {
        f.add(new ArrayList<String>(), "String");
        f.add(new ArrayList<Integer>(), 123);
 }
+```
 
 ## 第六章 枚举和注解
 ### 第30条 用enum代替int常量
@@ -332,6 +341,8 @@ public static void main(String[] args) {
 
 ### 第34条 用接口模拟可伸缩的枚举
 在java中一个枚举是无法直接去扩展另一个枚举的，但通过接口我们可以变相的实现这一点
+
+```java
 public interface Operation {
     double apply(double x, double y);
 }
@@ -351,6 +362,7 @@ public enum BasicOperation implements Operation {
         return symbol;
     }
 }
+```
 
 ### 第35条 注解优先于命名模式
 一般使用命名模式表明哪些程序元素需要通过某种工具或框架进行特殊处理 . 但是它有严重的缺点 – 以 Junit 为例
@@ -381,6 +393,7 @@ public enum BasicOperation implements Operation {
 
 ### 第39条 必要时进行保护性拷贝
 对于构造器的每个可变参数进行保护性拷贝
+```java
 public final class Period {
 
       private final Date start;
@@ -402,13 +415,20 @@ public final class Period {
             return end;
       }
 }
+```
+
 这个类看上去没有什么问题，时间是不可改变的。然而Date类本身是可变的。
+
+```java
 Date start = new Date(); 
 Date end = new Date(); 
 Period period = new Period(start, end); 
 end.setYear(78); 
 System.out.println(period.end());
+```
+
 为了保护Period实例的内部信息避免受到修改，导致问题，对于构造器的每个可变参数进行保护性拷贝（defensive copy）是必要的：
+```java
 public Period(Date start,Date end) { 
     this.start = new Date(start.getTime()); 
     this.end = new Date(end.getTime()); 
@@ -416,6 +436,7 @@ public Period(Date start,Date end) {
         throw new IllegalArgumentException(this.start + " after " + this.end); 
     } 
 }
+```
 对于参数类型可以被不可信任类子类化的参数，请不要使用clone方法进行保护性拷贝
 当X类提供了可变内部成员的访问能力时，该访问返回的应该是可变内部域的保护性拷贝。
 
@@ -434,11 +455,13 @@ public Period(Date start,Date end) {
 ### 第42条 慎用可变参数
 在重视性能的情况下，使用可变参数机制要小心，因为可变参数方法的每次调用都会导致进行一次数组分配和初始化。
 有一种折中的解决方案，先声明出所有参数数目小于等于3的方法，当参数数目超过3个时，使用可变参数方法
+```java
 public void foo() {}
 public void foo() {int a1}
 public void foo() {int a1, int a2}
 public void foo() {int a1, int a2, int a3}
 public void foo() {int a1, int a2, int a3, int... rest}
+```
 
 ### 第43条：返回零长度的数组或者集合，而不是null
 编写客户端程序的程序员可能会忘记写这种专门的代码来处理null返回值
@@ -500,8 +523,11 @@ for-each循环通过完全隐藏迭代器或者索引变量，避免混乱和出
 
 ### 第52条 通过接口引用对象
 应该优先使用接口而不是类来引用对象，例如Vector的情况。
+```java
 List<Subscriber> subscribers = new Vector<Subscriber>();
 Vector<Subscriber> subscribers = new Vector<Subscriber>();
+```
+
 如上，如果使用接口作为类型，程序将会更加灵活，当决定更换实现时，只需改变构造器中的类的名称
 
 ### 第53条 接口优先于反射机制
@@ -674,12 +700,14 @@ notifyAll()：唤醒线程池中的所有线程。
 延迟初始化有它的好处。如果域只在类的实例部分被访问，井且初始化这个域的开销很高，可能就值得进行延迟初始化。要确定这一点，唯一的办法就是测量类在用和不用延迟初始化时的性能差别。
 多线程初始化要慎重：当有多个线程时，延迟初始化是需要技巧的。如果两个或者多个线程共享一个延迟初始化的域，采用某种形式的同步是很重要的，否则就可能造成严重的Bug。
 静态域考虑使用延迟加载模式：如果出于性能的考虑而需要对静态域使用延迟初始化，就使用 lazy initialization holder class模式。这种模式保证了类要到被用到的时候才会被初始化
+```java
 private static class fieldHolder(){
     static final FieldType field = computeFieldValve();
 }
 static FiledType getField() {
     return FieldHolder.field;
 }
+```
 
 ### 第72条 不要依赖于线程调度器
 简单理解：决定哪些线程将会运行，不能依赖于操作系统的策略做到公正。这样的程序很可能是不能移植的。
@@ -723,6 +751,7 @@ transient：不需要序列化的字段注解
 
 ### 第78条 考虑用序列化代理代替序列化实例
 实现java.io.Serializable接口, 会增加出错和出现安全问题的可能性, 因为它开放了实例的另一种来源 ---- 反序列化. 有一种方法可以减少风险, 那就是序列化代理模式.
+```java
 public class Person implements Serializable {
       private static final long serialVersionUID = 1L;
       private String name;
@@ -815,6 +844,7 @@ public static void main(String[] args) {
             e.printStackTrace();
       }
 }
+```
 
 1、序列化对象时  会调用writeReplace()生成一个PersonProxy对象，然后对此对象进行序列化
 2、反序列化时，会调用PersonProxy的readResolve()方法生成一个Person对象
