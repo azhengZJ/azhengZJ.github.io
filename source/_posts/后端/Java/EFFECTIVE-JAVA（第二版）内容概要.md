@@ -372,7 +372,7 @@ public enum BasicOperation implements Operation {
 注解类型可以很好的解决命名模式的缺点
     
 ### 第36条 坚持使用Override注解
-    Override 注解来覆盖超类声明 , 编译器可以替你防止大量错误
+Override 注解来覆盖超类声明 , 编译器可以替你防止大量错误
 
 ### 第37条 用标记接口定义类型
 标记接口：指明一个类实现了具有某种属性的接口，例如Serializable接口。
