@@ -2,7 +2,7 @@
 title: GitHub-HelloWorld
 date: 2019-10-10 11:50:00
 author: azheng
-img: https://raw.githubusercontent.com/azhengZJ/azhengZJ.github.io/hexo/themes/hexo-theme-matery/source/medias/banner/3.jpg
+img: /medias/banner/3.jpg
 categories: 软件工具
 tags: Git
 ---

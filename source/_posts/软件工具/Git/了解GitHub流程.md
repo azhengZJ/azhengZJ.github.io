@@ -2,7 +2,7 @@
 title: 了解GitHub流程
 date: 2019-10-10 11:50:00
 author: azheng
-img: https://raw.githubusercontent.com/azhengZJ/azhengZJ.github.io/hexo/themes/hexo-theme-matery/source/medias/banner/2.jpg
+img: /medias/banner/2.jpg
 categories: 软件工具
 tags: Git
 ---
