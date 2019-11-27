@@ -2,7 +2,7 @@
 title: 手写线程同步锁 ，CAS无锁算法
 date: 2019-11-14 12:00:00
 author: azheng
-img: /medias/banner/7.jpg
+img: /medias/banner/5.jpg
 cover: false
 categories: 后端
 tags:
