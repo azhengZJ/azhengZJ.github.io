@@ -1,13 +1,13 @@
 ---
 title: 微服务Spring-Cloud配置中心自动刷新
-date: 2019-12-15 12:00:00
+date: 2019-12-16 12:00:00
 author: azheng
 img: /medias/banner/8.jpg
 cover: false
 categories: 后端
 tags:
   - Java
-  - jvm
+  - spring-cloud
 ---
 
 只需要添加 bus（rabbitmq ）依赖和连接地址 会自动开启自动刷新
