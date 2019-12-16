@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>心的足迹</title>
+  
+  <subtitle>心的足迹</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://azhengZJ.github.io/"/>
+  <updated>2019-12-16T12:55:54.932Z</updated>
+  <id>https://azhengZJ.github.io/</id>
+  
+  <author>
+    <name>azheng</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微服务Spring-Cloud配置中心自动刷新</title>
+    <link href="https://azhengZJ.github.io/2019/12/16/hou-duan/spring/wei-fu-wu-spring-cloud-pei-zhi-zhong-xin-zi-dong-shua-xin/"/>
+    <id>https://azhengZJ.github.io/2019/12/16/hou-duan/spring/wei-fu-wu-spring-cloud-pei-zhi-zhong-xin-zi-dong-shua-xin/</id>
+    <published>2019-12-16T12:00:00.000Z</published>
+    <updated>2019-12-16T12:55:54.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;只需要添加 bus（rabbitmq ）依赖和连接地址 会自动开启自动刷新&lt;br&gt;访问 http://{ 配置中心地址 }/actuator/bus-refresh 触发自动刷新&lt;/p&gt;
+&lt;p&gt;重点： 获取属性的属性类上必须要增加@RefreshScope
+        
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="https://azhengZJ.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="Java" scheme="https://azhengZJ.github.io/tags/Java/"/>
+    
+      <category term="spring-cloud" scheme="https://azhengZJ.github.io/tags/spring-cloud/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java虚拟机内存模型</title>
+    <link href="https://azhengZJ.github.io/2019/12/15/hou-duan/java/jvm/java-xu-ni-ji-nei-cun-mo-xing/"/>
+    <id>https://azhengZJ.github.io/2019/12/15/hou-duan/java/jvm/java-xu-ni-ji-nei-cun-mo-xing/</id>
+    <published>2019-12-15T12:00:00.000Z</published>
+    <updated>2019-12-16T12:55:54.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/medias/articlePic/jvm1.png&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="https://azhengZJ.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="Java" scheme="https://azhengZJ.github.io/tags/Java/"/>
+    
+      <category term="jvm" scheme="https://azhengZJ.github.io/tags/jvm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用排序算法</title>
+    <link href="https://azhengZJ.github.io/2019/11/16/hou-duan/java/chang-yong-pai-xu-suan-fa/"/>
+    <id>https://azhengZJ.github.io/2019/11/16/hou-duan/java/chang-yong-pai-xu-suan-fa/</id>
+    <published>2019-11-16T18:00:00.000Z</published>
+    <updated>2019-12-16T12:55:54.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;分类&lt;/strong&gt;&lt;br&gt;1）插入排序（直接插入排序、希尔排序）&lt;br&gt;2）交换排序（冒泡排序、快速排序）&lt;br&gt;3）选择排序（直接选择排序、堆排序）&lt;br&gt;4）归并排序&lt;br&gt;5）分配排序（基数排序）&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="https://azhengZJ.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="Java" scheme="https://azhengZJ.github.io/tags/Java/"/>
+    
+      <category term="算法" scheme="https://azhengZJ.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手写HashMap</title>
+    <link href="https://azhengZJ.github.io/2019/11/15/hou-duan/java/shou-xie-hashmap/"/>
+    <id>https://azhengZJ.github.io/2019/11/15/hou-duan/java/shou-xie-hashmap/</id>
+    <published>2019-11-15T12:00:00.000Z</published>
+    <updated>2019-12-16T12:55:54.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;JAVA1.7 和 JAVA1.8 中HashMap的主要区别&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1、数据结构不一样&lt;/strong&gt;&lt;br&gt;JAVA1.7  数组、链表&lt;br&gt;JAVA1.8  数组、链表、红黑树 
+        
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="https://azhengZJ.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="Java" scheme="https://azhengZJ.github.io/tags/Java/"/>
+    
+      <category term="Map" scheme="https://azhengZJ.github.io/tags/Map/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手写线程同步锁 ，CAS无锁算法</title>
+    <link href="https://azhengZJ.github.io/2019/11/14/hou-duan/java/shou-xie-xian-cheng-tong-bu-suo-cas-wu-suo-suan-fa/"/>
+    <id>https://azhengZJ.github.io/2019/11/14/hou-duan/java/shou-xie-xian-cheng-tong-bu-suo-cas-wu-suo-suan-fa/</id>
+    <published>2019-11-14T12:00:00.000Z</published>
+    <updated>2019-12-16T12:55:54.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;类似于ReentrantLock（重入锁）&lt;/p&gt;
+&lt;pre class=&quot; language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; lombok&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="https://azhengZJ.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="Java" scheme="https://azhengZJ.github.io/tags/Java/"/>
+    
+      <category term="并发" scheme="https://azhengZJ.github.io/tags/%E5%B9%B6%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>EFFECTIVE-JAVA（第二版）内容概要</title>
+    <link href="https://azhengZJ.github.io/2019/10/11/hou-duan/java/effective-java-di-er-ban-nei-rong-gai-yao/"/>
+    <id>https://azhengZJ.github.io/2019/10/11/hou-duan/java/effective-java-di-er-ban-nei-rong-gai-yao/</id>
+    <published>2019-10-11T14:10:00.000Z</published>
+    <updated>2019-12-16T12:55:54.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本书一共七十八小节，每个小节讲述了一条规则。 这些规则实践通常会使那些最优秀和最富有经验的程序员从中受益。 所有的内容分为11章，每章都涉及软件设计的一个广泛方面。 本书不需要按顺序阅读：每个小节都或多或少地独立存在。
+        
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="https://azhengZJ.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="Java" scheme="https://azhengZJ.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代码整洁之道</title>
+    <link href="https://azhengZJ.github.io/2019/10/10/bian-cheng-zhi-dao/dai-ma-zheng-ji-zhi-dao-nei-rong-gai-yao/"/>
+    <id>https://azhengZJ.github.io/2019/10/10/bian-cheng-zhi-dao/dai-ma-zheng-ji-zhi-dao-nei-rong-gai-yao/</id>
+    <published>2019-10-10T12:30:00.000Z</published>
+    <updated>2019-12-16T12:55:54.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;读了代码整洁之道，觉得这本书写的很好，所以就将里面自己觉得很经典的内容记录下来，作为自己以后写代码的标准和准则。同时也为那些曾经困惑过的人一点参考吧！&lt;/p&gt;
+&lt;h2 id=&quot;一、在正式开始之前，我们先思考几个几个问题：&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="编程之道" scheme="https://azhengZJ.github.io/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
+    
+    
+      <category term="整洁代码" scheme="https://azhengZJ.github.io/tags/%E6%95%B4%E6%B4%81%E4%BB%A3%E7%A0%81/"/>
+    
+      <category term="重构" scheme="https://azhengZJ.github.io/tags/%E9%87%8D%E6%9E%84/"/>
+    
+      <category term="测试" scheme="https://azhengZJ.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub-HelloWorld</title>
+    <link href="https://azhengZJ.github.io/2019/10/10/ruan-jian-gong-ju/git/git-zhi-shi-dian-zheng-li/"/>
+    <id>https://azhengZJ.github.io/2019/10/10/ruan-jian-gong-ju/git/git-zhi-shi-dian-zheng-li/</id>
+    <published>2019-10-10T11:50:00.000Z</published>
+    <updated>2019-12-16T12:55:54.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;该Hello
+        
+      
+    
+    </summary>
+    
+      <category term="软件工具" scheme="https://azhengZJ.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Git" scheme="https://azhengZJ.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>了解GitHub流程</title>
+    <link href="https://azhengZJ.github.io/2019/10/10/ruan-jian-gong-ju/git/liao-jie-github-liu-cheng/"/>
+    <id>https://azhengZJ.github.io/2019/10/10/ruan-jian-gong-ju/git/liao-jie-github-liu-cheng/</id>
+    <published>2019-10-10T11:50:00.000Z</published>
+    <updated>2019-12-16T12:55:54.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;##了解GitHub流程&lt;/p&gt;
+&lt;p&gt;GitHub flow是一个轻量级的，基于分支的工作流，它支持定期进行部署的团队和项目。本指南说明了GitHub
+        
+      
+    
+    </summary>
+    
+      <category term="软件工具" scheme="https://azhengZJ.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Git" scheme="https://azhengZJ.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Zuji-JPA — 定义优于逻辑的Spring Data JPA动态查询扩展库</title>
+    <link href="https://azhengZJ.github.io/2019/10/08/hou-duan/jpa/zuji-jpa-ding-yi-you-yu-luo-ji-de-spring-data-jpa-dong-tai-cha-xun-kuo-zhan-ku/"/>
+    <id>https://azhengZJ.github.io/2019/10/08/hou-duan/jpa/zuji-jpa-ding-yi-you-yu-luo-ji-de-spring-data-jpa-dong-tai-cha-xun-kuo-zhan-ku/</id>
+    <published>2019-10-08T14:10:00.000Z</published>
+    <updated>2019-12-16T12:55:54.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://azhengzj.github.io/zuji-jpa/&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/azhengZJ/zuji-jpa&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="https://azhengZJ.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="Java" scheme="https://azhengZJ.github.io/tags/Java/"/>
+    
+      <category term="JPA" scheme="https://azhengZJ.github.io/tags/JPA/"/>
+    
+      <category term="Zuji" scheme="https://azhengZJ.github.io/tags/Zuji/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://azhengZJ.github.io/2019/09/12/hello-world/"/>
+    <id>https://azhengZJ.github.io/2019/09/12/hello-world/</id>
+    <published>2019-09-12T22:25:00.000Z</published>
+    <updated>2019-12-16T12:55:54.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://azhengZJ.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Hexo" scheme="https://azhengZJ.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
