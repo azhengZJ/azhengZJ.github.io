@@ -1,5 +1,5 @@
 ---
-title: 手写HashMap
+title: java虚拟机内存模型
 date: 2019-12-15 12:00:00
 author: azheng
 img: /medias/banner/7.jpg
@@ -12,7 +12,7 @@ tags:
 
 
 
-![avatar](/themes/hexo-theme-matery/source/medias/articlePic/jvm1.png)
+![JVM内存模型图](/medias/articlePic/jvm1.png)
 
 **程序计数器**
 记录程序运行的下一条指令的地址，在多线程环境下，每一个线程都有自己的程序计数器
@@ -28,7 +28,7 @@ tags:
 方法区也为所以线程所共享，用于存放已加载的类信息、静态变量、常量和即时编译器编译后的代码。-XX:MaxPermSize用于设置方法区大小
 
 
-![avatar](/themes/hexo-theme-matery/source/medias/articlePic/jvm2.png)
+![堆内存结构图](/medias/articlePic/jvm2.png)
 
 **年轻代**
 年轻代内存占1/3
